@@ -1,0 +1,12 @@
+[package]
+name = "pyo3_test"
+version = "0.1.0"
+
+[lib]
+name = "pyo3_example"
+
+# "cdylib" is necessary to produce a shared library for Python to import from.
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.2", features = ["extension-module"] }
